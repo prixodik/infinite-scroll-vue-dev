@@ -1,5 +1,6 @@
 {
-	"entryPoints": ["src/types"],
+	"entryPoints": ["src"],
+	"entryPointStrategy": "expand",
 	"out": "docs/types",
 	"plugin": ["typedoc-plugin-markdown"],
 	"exclude": ["**/*.test.ts", "**/__mocks__/**"],

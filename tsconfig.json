@@ -11,11 +11,13 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
+	"noEmit": true,
+    "outDir": "./dist",
     "paths": {
       "@/*": ["src/*"]
     },
     "types": ["node", "vite/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

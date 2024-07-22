@@ -3,12 +3,7 @@ module.exports = {
 	env: {
 	  node: true,
 	},
-	extends: [
-	  'plugin:vue/vue3-essential',
-	  'eslint:recommended',
-	  '@vue/typescript/recommended',
-	  'plugin:@typescript-eslint/recommended',
-	],
+	extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/typescript/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:storybook/recommended'],
 	parserOptions: {
 	  ecmaVersion: 2020,
 	},

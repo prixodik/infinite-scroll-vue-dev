@@ -4,11 +4,11 @@
 
       <div class="header__logo">
         <a href="/">
-          <img class="header__logo-orange" src="/images/logo-orange.svg" alt=""/>
-          <img class="header__logo-white" src="/images/logo.svg" alt=""/>
+          <img class="header__logo-orange" src="/images/logo-orange.svg" alt="" />
+          <img class="header__logo-white" src="/images/logo.svg" alt="" />
         </a>
       </div>
-      
+
       <div class="socials-block header__soc">
         <a class="socials-block__icon" href="#">
           <svg class="icon icon-sprite-svg--soc-1">
@@ -32,19 +32,11 @@
 </template>
 
 <script>
-  //import UserCard from './UserCard';
-  
-  /**
-   * @typedef {Object} User
-   * @property {Object} name
-   * @property {string} name.first
-   * @property {string} name.last
-   * @property {Object} picture
-   * @property {string} picture.thumbnail
-   * @property {string} email
-   */
-  
-  export default {
-	  name: 'UserList',
-  }
+/**
+ * Компонент Header.
+ * @component
+ */
+export default {
+  name: 'HeaderSection',
+}
 </script>

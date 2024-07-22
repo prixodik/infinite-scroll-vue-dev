@@ -10,6 +10,7 @@ export default defineConfig({
     },
   },
   build: {
+	outDir: 'dist',
     target: 'esnext', // Указываем целевую версию JavaScript
     minify: 'esbuild', // Минификация с использованием esbuild для высокой скорости
     chunkSizeWarningLimit: 500, // Устанавливаем лимит размера чанков для предупреждений
@@ -20,7 +21,8 @@ export default defineConfig({
           vendor: ['vue']
         }
       }
-    }
+    },
+	sourcemap: false // Отключение генерации source maps
   },
   optimizeDeps: {
     include: ['vue'],

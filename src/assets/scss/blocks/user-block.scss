@@ -1,0 +1,41 @@
+.user-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	&__img{
+		flex: 0 0 200px;
+		width: 200px;
+		max-height: 200px;
+		position: relative;
+		margin-bottom: 16px;
+		-webkit-clip-path: url(#clip-path-after);
+		clip-path: url(#clip-path-after);
+		transition: transform 0.5s;
+
+		img{
+			
+			width: 100%;
+			height: 100%;
+			display: block;
+			transition: transform 0.5s;
+		}
+
+		&:hover{
+			transform: rotate(45deg);
+			img{
+				transform: scale(1.05) rotate(-45deg);
+			}
+		}
+	}
+
+	&__title{
+		margin-bottom: 4px;
+		color: $black2;
+	}
+
+	&__email{
+		color: #A1A5B7;
+	}
+}

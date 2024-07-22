@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	overflow-x: hidden;
+
+	&.overflow-hidden {
+		overflow: hidden;
+	}
+}
+body {
+	color: $text-body;
+	font: 16px/24px $baseFF;
+	min-height: 100%;
+	position: relative;
+	background: $baseBg;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	@include media($xs) {
+		font: 14px/20px $baseFF;
+	}
+
+	&.overflow-hidden {
+		overflow: hidden;
+	}
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+input {
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+button {
+	background: none;
+	border: 0;
+	outline: none;
+}
+
+button,
+input[type="submit"] {
+	@include transition();
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: all .3s ease;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+p {
+	margin: 0 0 16px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.slick-slider *,
+input,
+button,
+a:focus,
+a:hover {
+	outline: none !important;
+}
+* {
+	-webkit-locale: auto;
+	box-sizing: border-box;
+}
+*:after,
+*:before,
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	padding-left: $containerP;
+	padding-right: $containerP;
+	max-width: $containerW;
+	margin-left: auto;
+	margin-right: auto;
+
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	@include media($md){
+		max-width: 807px;
+	}
+
+	&.container-fluid {
+		max-width: 100%;
+	}
+}
+
+.svg-shape {
+	position: absolute;
+	width: 0;
+	height: 0;
+}

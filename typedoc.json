@@ -1,0 +1,10 @@
+{
+	"entryPoints": ["src/types"],
+	"out": "docs/types",
+	"plugin": ["typedoc-plugin-markdown"],
+	"exclude": ["**/*.test.ts", "**/__mocks__/**"],
+	"excludeExternals": true,
+	"excludePrivate": true,
+	"excludeProtected": true
+  }
+  

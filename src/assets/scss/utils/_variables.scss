@@ -1,0 +1,70 @@
+// Контрольные точки;
+// Контрольные точки;
+$breakpointsPhone: 370px;
+$breakpointsPhoneWide: 480px;
+$breakpointsPhablet: 540px;
+$breakpointsTabletSmall: 640px;
+$breakpointsTablet: 766px;
+$breakpointsTabletWide: 992px;
+$breakpointsDesktop: 1064px;
+$breakpointsDesktopWideMd: 1450px;
+$breakpointsDesktopWide: 1600px;
+
+$xlg: $breakpointsDesktopWide;
+$lg: $breakpointsDesktopWideMd;
+$md: $breakpointsDesktop;
+$sm: $breakpointsTabletWide;
+$xs: $breakpointsTablet;
+$xxs: $breakpointsPhone;
+
+$breakpoints: (
+	"phone": $breakpointsPhone,
+	"phone-wide": $breakpointsPhoneWide,
+	"phablet": $breakpointsPhablet,
+	"tablet-small": $breakpointsTabletSmall,
+	"tablet": $breakpointsTablet,
+	"tablet-wide": $breakpointsTabletWide,
+	"desktop": $breakpointsDesktop,
+	"desktop-wide-md": $breakpointsDesktopWideMd,
+	"desktop-wide": $breakpointsDesktopWide,
+);
+
+$enable-grid-classes: true !default;
+
+$grid-breakpoints: (
+	xxxs: 0,
+	xl: $xlg,
+	lg: $lg,
+	md: $md,
+	sm: $sm,
+	xs: $xs,
+	xxs: $xxs,
+) !default;
+
+$white: #fff;
+$black: #000;
+$black2: #111;
+
+$orange: #FF4B20;
+
+$text-default: $black2;
+$text-body: $black2;
+$text-heading: $black2;
+
+
+
+
+$baseFS: 16px !default;
+$baseLH: 1.3;
+$baseFW: 500;
+$baseFSt: normal;
+$baseFF: 'Inter', sans-serif;
+$titleFF: 'Inter', sans-serif;
+$baseFClr: $black2;
+$baseBg: #F8F8F8;
+
+$containerW: 1192px;
+$containerP: 20px;
+
+$baseLinkColor: inherit;
+$baseLinkColorHover: inherit;
